@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Belajar Tajwid Interaktif</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- di bagian <head> atau sebelum </body>, tambahkan -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // contoh: ketika diklik kartu huruf, tampil modal atau expand detail
+  const hurufCards = document.querySelectorAll('.huruf-card');
+  hurufCards.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('active');
+    });
+  });
+});
+</script>
+
+</head>
+<body>
+  
+  <div class="navbar">
+        <a href="#syekh-section">Para Syekh / Qari</a>
+        <a href="#Hukum-Tajwid">Hukum Tajwid Terperinci</a>
+        <a href="#makhraj-lengkap">Makhraj Huruf Hijaiyah Lengkap</a>
+        <a href="#maqamat">Maqamat / Nada Bacaan Qur’an</a>
+  </div>
+
+<header>
+  <h1>Pembelajaran Tajwid & Makhraj Interaktif</h1>
+  <p>Belajar bacaan Al-Qur’an dengan tepat dari makhraj, sifat, dan hukum tajwid</p>
+</header>
+
+<main>
+  <!-- Syekh Section -->
+  <section class="syekh-section" id="syekh-section">
+    <h2>Para Syekh / Qari</h2>
+    <div class="syekh-list">
+      <!-- contoh 1 -->
+      <div class="syekh-card">
+        <img src="images/muammar_za.jpg" alt="Muammar Z.A." class="syekh-img">
+        <div>
+          <h3>Muammar Z.A.</h3>
+          <p>Qari Indonesia yang terkenal dengan bacaan yang merdu.</p>
+          <audio controls>
+            <source src="audio/muammarza-surah.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+          </audio>
+        </div>
+      </div>
+      <!-- contoh 2 -->
+      <div class="syekh-card">
+        <img src="images/ali_jaber.jpg" alt="Sheikh Ali Jaber" class="syekh-img">
+        <div>
+          <h3>Sheikh Ali Jaber</h3>
+          <p>Ustad & qari berpaham tajwid yang juga dikenal di Indonesia.</p>
+          <audio controls>
+            <source src="audio/ali_jaber_recitation.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung audio.
+          </audio>
+        </div>
+      </div>
+      <!-- bisa tambah syekh lain di sini -->
+    </div>
+  </section>
+
+  <section class="tajwid-section">
+  <h2>Hukum Tajwid Terperinci</h2>
+  <div class="tajwid-list" id="Hukum-Tajwid">
+    <!-- Izhar -->
+    <div class="tajwid-card">
+      <h3>Izhar</h3>
+      <p>Pengucapan nun sukun atau tanwin secara jelas tanpa dengung.</p>
+      <p>Contoh: <em>مِنْ أَهْلِ</em> (QS. Al-Baqarah: 125)</p>
+      <audio controls>
+        <source src="audio/izhar.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+       <!-- Idgham -->
+    <div class="tajwid-card">
+      <h3>Idgham</h3>
+      <p>Penggabungan nun sukun atau tanwin ke huruf berikutnya sehingga dibaca menyatu.</p>
+      <p>Contoh: <em>مَنْ يَقُولُ</em> (QS. Al-Baqarah: 8)</p>
+      <audio controls>
+        <source src="audio/idgham.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Ikhfa -->
+    <div class="tajwid-card">
+      <h3>Ikhfa</h3>
+      <p>Nun sukun atau tanwin dibaca samar dengan suara tersembunyi antara izhar dan idgham.</p>
+      <p>Contoh: <em>مِنْ ثَمَرَاتِ</em> (QS. An-Nahl: 11)</p>
+      <audio controls>
+        <source src="audio/ikhfa.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Iqlab -->
+    <div class="tajwid-card">
+      <h3>Iqlab</h3>
+      <p>Nun sukun atau tanwin berubah menjadi mim apabila bertemu huruf ba.</p>
+      <p>Contoh: <em>أَنْبَأْنَاهُمْ</em> (QS. Al-Baqarah: 239)</p>
+      <audio controls>
+        <source src="audio/iqlab.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Mad -->
+    <div class="tajwid-card">
+      <h3>Mad</h3>
+      <p>Memanjangkan suara huruf mad (ا, و, ي) yang bertemu tanda mad atau sukun.</p>
+      <p>Contoh: <em>قَالَ</em> (QS. Al-Fatihah: 4)</p>
+      <audio controls>
+        <source src="audio/mad.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Ghunna -->
+    <div class="tajwid-card">
+      <h3>Ghunna</h3>
+      <p>Dengungan suara dari hidung saat mengucapkan nun dan mim yang ber-harakat tasydid.</p>
+      <p>Contoh: <em>مَنّ</em> (QS. Al-Qari’ah: 6)</p>
+      <audio controls>
+        <source src="audio/ghunna.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Qalqalah -->
+    <div class="tajwid-card">
+      <h3>Qalqalah</h3>
+      <p>Getaran suara saat huruf qalqalah (ق، ط، ب، ج، د) bertanda sukun atau di akhir kalimat.</p>
+      <p>Contoh: <em>أَقْرَأْ</em> (QS. Al-‘Alaq: 1)</p>
+      <audio controls>
+        <source src="audio/qalqalah.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Tafkhim -->
+    <div class="tajwid-card">
+      <h3>Tafkhim</h3>
+      <p>Pengucapan huruf dengan suara tebal (terutama untuk huruf ص، ض، ط، ظ، غ، ق، خ).</p>
+      <p>Contoh: <em>صَدَقَ</em> (QS. Al-Baqarah: 254)</p>
+      <audio controls>
+        <source src="audio/tafkhim.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Tarqiq -->
+    <div class="tajwid-card">
+      <h3>Tarqiq</h3>
+      <p>Pengucapan huruf dengan suara tipis (khusus huruf ر selain yang bertafkhim).</p>
+      <p>Contoh: <em>رَحِيمٌ</em> (QS. Al-Fatihah: 3)</p>
+      <audio controls>
+        <source src="audio/tarqiq.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Waqf -->
+    <div class="tajwid-card">
+      <h3>Waqf</h3>
+      <p>Hukum berhenti saat membaca Al-Qur’an, dengan tata cara tertentu seperti waqf lazim, jaiz, dan lain-lain.</p>
+      <p>Contoh: Penghentian bacaan di akhir ayat atau kalimat.</p>
+      <audio controls>
+        <source src="audio/waqf.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+</section>
+
+
+<section class="makhraj-lengkap" id="makhraj-lengkap">
+  <h2>Makhraj Huruf Hijaiyah Lengkap</h2>
+  <table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align:left;">
+    <thead style="background:#f0f0f0;">
+      <tr>
+        <th>No</th>
+        <th>Huruf</th>
+        <th>Makhraj</th>
+        <th>Penjelasan</th>
+        <th>Audio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>ا</td>
+        <td>Al-Jauf</td>
+        <td>Keluar dari rongga mulut, huruf mad panjang</td>
+        <td><audio controls><source src="audio/alif.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>و</td>
+        <td>Al-Jauf & Asy-Syafatain</td>
+        <td>Keluar dari rongga mulut dan bibir, jika sukun maka mad</td>
+        <td><audio controls><source src="audio/wawu.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>ي</td>
+        <td>Al-Jauf & Tengah Lidah</td>
+        <td>Keluar dari rongga mulut, atau tengah lidah ke langit-langit</td>
+        <td><audio controls><source src="audio/ya.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>ه</td>
+        <td>Pangkal Tenggorokan</td>
+        <td>Bersama Hamzah, keluar dari ujung tenggorokan</td>
+        <td><audio controls><source src="audio/ha.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>ء (Hamzah)</td>
+        <td>Pangkal Tenggorokan</td>
+        <td>Udara keluar dari dasar tenggorokan</td>
+        <td><audio controls><source src="audio/hamzah.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>ع</td>
+        <td>Tengah Tenggorokan</td>
+        <td>Suara keluar dari tengah halkum</td>
+        <td><audio controls><source src="audio/ain.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>ح</td>
+        <td>Tengah Tenggorokan</td>
+        <td>Keluar bersamaan dengan 'Ain, tapi lebih lembut</td>
+        <td><audio controls><source src="audio/ha2.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>غ</td>
+        <td>Ujung Tenggorokan</td>
+        <td>Keluar bersama huruf kha, terdengar seperti suara serak</td>
+        <td><audio controls><source src="audio/ghain.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>خ</td>
+        <td>Ujung Tenggorokan</td>
+        <td>Keluar dari pangkal mulut dekat tenggorokan</td>
+        <td><audio controls><source src="audio/kha.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>ق</td>
+        <td>Pangkal Lidah</td>
+        <td>Pangkal lidah bertemu langit-langit belakang</td>
+        <td><audio controls><source src="audio/qaf.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>ك</td>
+        <td>Pangkal Lidah</td>
+        <td>Seperti Qaf tapi lebih ke depan sedikit</td>
+        <td><audio controls><source src="audio/kaf.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>ج</td>
+        <td>Tengah Lidah</td>
+        <td>Lidah tengah menyentuh langit-langit tengah</td>
+        <td><audio controls><source src="audio/jim.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>ش</td>
+        <td>Tengah Lidah</td>
+        <td>Seperti Jim tapi lebih bersuara mengalir</td>
+        <td><audio controls><source src="audio/syin.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>ض</td>
+        <td>Sisi Lidah</td>
+        <td>Salah satu sisi lidah menyentuh gigi geraham atas</td>
+        <td><audio controls><source src="audio/dhod.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>ل</td>
+        <td>Ujung Sisi Lidah</td>
+        <td>Ujung lidah ke gusi gigi atas</td>
+        <td><audio controls><source src="audio/lam.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>ن</td>
+        <td>Ujung Lidah</td>
+        <td>Ujung lidah ke gusi gigi atas dan suara dari hidung</td>
+        <td><audio controls><source src="audio/nun.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>ر</td>
+        <td>Ujung Lidah</td>
+        <td>Lidah sedikit bergetar menyentuh langit-langit depan</td>
+        <td><audio controls><source src="audio/ro.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>ط</td>
+        <td>Ujung Lidah</td>
+        <td>Lidah menyentuh gusi gigi atas</td>
+        <td><audio controls><source src="audio/tho.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>د</td>
+        <td>Ujung Lidah</td>
+        <td>Seperti Ta tapi lebih ringan</td>
+        <td><audio controls><source src="audio/dal.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>ت</td>
+        <td>Ujung Lidah</td>
+        <td>Ujung lidah menyentuh gusi gigi atas</td>
+        <td><audio controls><source src="audio/ta.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>ظ</td>
+        <td>Ujung Lidah dan Ujung Gigi Atas</td>
+        <td>Ujung lidah keluar sedikit menyentuh gigi atas</td>
+        <td><audio controls><source src="audio/zha.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>ذ</td>
+        <td>Ujung Lidah dan Ujung Gigi Atas</td>
+        <td>Sama seperti ظ tapi suara lebih ringan</td>
+        <td><audio controls><source src="audio/dza.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>ث</td>
+        <td>Ujung Lidah dan Ujung Gigi Atas</td>
+        <td>Seperti ‘th’ dalam bahasa Inggris: “thing”</td>
+        <td><audio controls><source src="audio/tsa.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>ف</td>
+        <td>Bibir Bawah dan Gigi Atas</td>
+        <td>Bibir bawah menyentuh ujung gigi atas</td>
+        <td><audio controls><source src="audio/fa.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>ب</td>
+        <td>Dua Bibir</td>
+        <td>Bibir atas dan bawah tertutup rapat</td>
+        <td><audio controls><source src="audio/ba.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>م</td>
+        <td>Dua Bibir</td>
+        <td>Sama seperti Ba, tapi suara mengalir dari hidung</td>
+        <td><audio controls><source src="audio/mim.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>ن (Ghunnah)</td>
+        <td>Khaysum (rongga hidung)</td>
+        <td>Bila ada tasydid atau dalam hukum Ikhfa, Iqlab, Idgham</td>
+        <td><audio controls><source src="audio/ghunnah.mp3" type="audio/mpeg"></audio></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+  <!-- Maqamat / Melody Section -->
+  <section class="maqam-section" id="maqamat">
+    <h2>Maqamat / Nada Bacaan Qur’an</h2>
+    <div class="maqam-list">
+      <div class="maqam-card">
+        <h4>Bayyati</h4>
+        <audio controls>
+          <source src="audio/maqam-bayyati.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="maqam-card">
+        <h4>Hijaz</h4>
+        <audio controls>
+          <source src="audio/maqam-hijaz.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <!-- tambahkan maqam lain -->
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Belajar Tajwid & Makhraj. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hurufCards = document.querySelectorAll('.huruf-card');
+  hurufCards.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('active');
+    });
+  });
+});
+</script>
+
+</body>
+</html>
