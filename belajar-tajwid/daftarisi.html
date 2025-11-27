@@ -36,7 +36,15 @@
         text-decoration: none;
         text-align: center;
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        position: relative;
+}
+.btn:hover {
+  transform: translateY(-5px); /* naik 5px */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.218); /* bayangan lebih tebal */
+} ;
+  
 </style>
 </head>
 <body>
