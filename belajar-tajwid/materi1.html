@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Materi</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f3e9da;
+        margin: 0;
+        padding: 30px;
+    }
+
+    a {
+        color: #13b9db;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .header {
+        background: #13e0db;
+        color: white;
+        padding: 18px;
+        border-radius: 12px;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        margin-bottom: 25px;
+    }
+
+    .tajwid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 1.5rem;
+}
+.tajwid-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+.tajwid-card:hover {
+  transform: translateY(-5px); /* naik 5px */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* bayangan lebih tebal */
+}
+
+.tajwid-card h3 {
+  color: #0b3d91;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+.tajwid-card p {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+.tajwid-card em {
+  background: #e3f0ff;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  font-style: normal;
+  color: #0456b3;
+}
+.tajwid-card audio {
+  width: 100%;
+  outline: none;
+  margin-top: 0.6rem;
+}
+</style>
+</head>
+<body>
+
+<a href="daftarisi.html">← Kembali ke Daftar Isi</a>
+
+<div class="header" id="judul">Hukum Hukum</div>
+
+<div class="card" id="isi">
+    <section class="tajwid-section" id="tajwid-section">
+  <div class="tajwid-list">
+    <!-- Izhar -->
+    <div class="tajwid-card">
+      <h3>1.Idzhar</h3>
+      <p>      اَمَّا لُغَةً فَهُوَ الْبَيَانُ،idzhar menurut bahasa adalah jelas/terang      </p>
+ <p>menurut istilah adalah mengeluarkan setiap huruf dari makhrajnya tanpa disertai degan gunnah.</p> 
+      <p>Contoh: <em>مِنْ أَهْلِ</em> (QS. Al-Baqarah: 125)</p>
+      <audio controls>
+        <source src="audio/izhar.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+       <!-- Idgham -->
+    <div class="tajwid-card">
+      <h3>2.Idgham</h3>
+      <p>Penggabungan nun sukun atau tanwin ke huruf berikutnya sehingga dibaca menyatu.</p>
+      <p>Contoh: <em>مَنْ يَقُولُ</em> (QS. Al-Baqarah: 8)</p>
+      <audio controls>
+        <source src="audio/idgham.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+<!-- Iqlab -->
+    <div class="tajwid-card">
+      <h3>3.Iqlab</h3>
+      <p>Nun sukun atau tanwin berubah menjadi mim apabila bertemu huruf ba.</p>
+      <p>Contoh: <em>أَنْبَأْنَاهُمْ</em> (QS. Al-Baqarah: 239)</p>
+      <audio controls>
+        <source src="audio/iqlab.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <!-- Ikhfa -->
+    <div class="tajwid-card">
+      <h3>4.Ikhfa</h3>
+      <p>Nun sukun atau tanwin dibaca samar dengan suara tersembunyi antara izhar dan idgham.</p>
+      <p>Contoh: <em>مِنْ ثَمَرَاتِ</em> (QS. An-Nahl: 11)</p>
+      <audio controls>
+        <source src="audio/ikhfa.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    
+
+    <!-- Mad -->
+    <div class="tajwid-card">
+      <h3>Mad</h3>
+      <p>Memanjangkan suara huruf mad (ا, و, ي) yang bertemu tanda mad atau sukun.</p>
+      <p>Contoh: <em>قَالَ</em> (QS. Al-Fatihah: 4)</p>
+      <audio controls>
+        <source src="audio/mad.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Ghunna -->
+    <div class="tajwid-card">
+      <h3>Ghunna</h3>
+      <p>Dengungan suara dari hidung saat mengucapkan nun dan mim yang ber-harakat tasydid.</p>
+      <p>Contoh: <em>مَنّ</em> (QS. Al-Qari’ah: 6)</p>
+      <audio controls>
+        <source src="audio/ghunna.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Qalqalah -->
+    <div class="tajwid-card">
+      <h3>Qalqalah</h3>
+      <p>Getaran suara saat huruf qalqalah (ق، ط، ب، ج، د) bertanda sukun atau di akhir kalimat.</p>
+      <p>Contoh: <em>أَقْرَأْ</em> (QS. Al-‘Alaq: 1)</p>
+      <audio controls>
+        <source src="audio/qalqalah.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Tafkhim -->
+    <div class="tajwid-card">
+      <h3>Tafkhim</h3>
+      <p>Pengucapan huruf dengan suara tebal (terutama untuk huruf ص، ض، ط، ظ، غ، ق، خ).</p>
+      <p>Contoh: <em>صَدَقَ</em> (QS. Al-Baqarah: 254)</p>
+      <audio controls>
+        <source src="audio/tafkhim.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Tarqiq -->
+    <div class="tajwid-card">
+      <h3>Tarqiq</h3>
+      <p>Pengucapan huruf dengan suara tipis (khusus huruf ر selain yang bertafkhim).</p>
+      <p>Contoh: <em>رَحِيمٌ</em> (QS. Al-Fatihah: 3)</p>
+      <audio controls>
+        <source src="audio/tarqiq.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Waqf -->
+    <div class="tajwid-card">
+      <h3>Waqf</h3>
+      <p>Hukum berhenti saat membaca Al-Qur’an, dengan tata cara tertentu seperti waqf lazim, jaiz, dan lain-lain.</p>
+      <p>Contoh: Penghentian bacaan di akhir ayat atau kalimat.</p>
+      <audio controls>
+        <source src="audio/waqf.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+</section>
+</div>
+
+</body>
+</html>

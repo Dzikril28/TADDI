@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Belajar Tajwid Interaktif.</title>
+  <title>Belajar Tajwid Interaktif</title>
   <link rel="stylesheet" href="style.css">
   <!-- di bagian <head> atau sebelum </body>, tambahkan -->
 <script>
@@ -16,19 +16,42 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-</script>
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+  }
 
+  // Tutup menu jika klik di luar
+  window.onclick = function(event) {
+    if (!event.target.matches('.navbar img')) {
+      let dropdowns = document.getElementsByClassName("dropdown-content");
+      for (let i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
 </head>
 <body>
-  
-  <div class="navbar">
-        <a href="#syekh-section">Para Syekh / Qari</a>
-        <a href="#Hukum-Tajwid">Hukum Tajwid Terperinci</a>
-        <a href="#makhraj-lengkap">Makhraj Huruf Hijaiyah Lengkap</a>
-        <a href="#maqamat">Maqamat / Nada Bacaan Qur’an</a>
-  </div>
+  <header>
+     <div class="navbar">
+      <marquee>Tenangkan hati jernihkan pikiran selamat belajar.خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ
 
-<header>
+KHOIRUKUM MAN TA’ALLAMAL-QUR’AANA WA ‘ALLAMAH
+(HR. Bukhari)
+Artinya: Sebaik-baik diantara kalian adalah yang mempelajari al-Quran dan mengajarkannya.</marquee>
+  <div class="dropdown">
+    <img src="burger.jpg" alt="Profile" onclick="toggleMenu()">
+    <div id="menu" class="dropdown-content">
+      <a href="#syekh-section">Para Syekh</a>
+      <a href="#tajwid-section">Pejelasan Tajwid</a>
+      <a href="#makhraj-section">Pejelasan Makhraj</a>
+      <a href="#1maqom-section">Lagu lagu</a>
+    </div>
+  </div>
+</div>
   <h1>Pembelajaran Tajwid & Makhraj Interaktif</h1>
   <p>Belajar bacaan Al-Qur’an dengan tepat dari makhraj, sifat, dan hukum tajwid</p>
 </header>
@@ -40,24 +63,24 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="syekh-list">
       <!-- contoh 1 -->
       <div class="syekh-card">
-        <img src="images/muammar_za.jpg" alt="Muammar Z.A." class="syekh-img">
+        <img src="muamar.jpg" alt="Muammar Z.A." class="syekh-img">
         <div>
           <h3>Muammar Z.A.</h3>
           <p>Qari Indonesia yang terkenal dengan bacaan yang merdu.</p>
           <audio controls>
-            <source src="audio/muammarza-surah.mp3" type="audio/mpeg">
+            <source src="002.mp3" type="audio/mpeg">
             Browser Anda tidak mendukung elemen audio.
           </audio>
         </div>
       </div>
       <!-- contoh 2 -->
       <div class="syekh-card">
-        <img src="images/ali_jaber.jpg" alt="Sheikh Ali Jaber" class="syekh-img">
+        <img src="syekk_ali.jpg" alt="Sheikh Ali Jaber" class="syekh-img">
         <div>
           <h3>Sheikh Ali Jaber</h3>
           <p>Ustad & qari berpaham tajwid yang juga dikenal di Indonesia.</p>
           <audio controls>
-            <source src="audio/ali_jaber_recitation.mp3" type="audio/mpeg">
+            <source src="001.mp3" type="audio/mpeg">
             Browser Anda tidak mendukung audio.
           </audio>
         </div>
@@ -66,9 +89,9 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </section>
 
-  <section class="tajwid-section">
+  <section class="tajwid-section" id="tajwid-section">
   <h2>Hukum Tajwid Terperinci</h2>
-  <div class="tajwid-list" id="Hukum-Tajwid">
+  <div class="tajwid-list">
     <!-- Izhar -->
     <div class="tajwid-card">
       <h3>Izhar</h3>
@@ -171,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 
 
-<section class="makhraj-lengkap" id="makhraj-lengkap">
+<section class="makhraj-lengkap" id="makhraj-section">
   <h2>Makhraj Huruf Hijaiyah Lengkap</h2>
   <table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align:left;">
     <thead style="background:#f0f0f0;">
@@ -378,7 +401,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 
   <!-- Maqamat / Melody Section -->
-  <section class="maqam-section" id="maqamat">
+  <section class="maqam-section" id="1maqom-section">
     <h2>Maqamat / Nada Bacaan Qur’an</h2>
     <div class="maqam-list">
       <div class="maqam-card">
