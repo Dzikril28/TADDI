@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Makhraj</h1>
+    <p>Makhraj adalah tempat keluarnya huruf-huruf hijaiyah dari alat ucap manusia. Dalam ilmu tajwid, makhraj sangat penting untuk memastikan bahwa setiap huruf diucapkan dengan benar sesuai dengan tempat keluarnya.</p>
+    <tr><bold>Makhroj huruf semuanya ada 17, menurut perkataan yang masyhur Imam Kholil bin Ahmad. Dengan terbagi menjadi 5 bagian.</bold></tr>
+    <h2>Jenis-jenis Makhraj</h2>
+    <ul>
+        <li><strong>Makhraj Al-jauf (Makhraj Rongga Mulut) Terbagi Manjadi 1 Bagian Makhroj:</strong>1. Al-jauf (Rongga Mulut) : </li>
+        <li><strong>Makhraj Halqi (Makhraj Tenggorokan):</strong> </li>
+        <li><strong>Makhraj Lisan (Makhraj Lidah):</strong> Tempat keluarnya huruf-huruf yang berasal dari lidah, seperti ت (Ta), د (Dal), ط (Toa), ن (Nun).</li>
+        <li><strong>Makhraj Shafatain (Makhraj Bibir):</strong> Tempat keluarnya huruf-huruf yang berasal dari bibir, seperti ب (Ba), م (Mim), ف (Fa).</li>
+        <li><strong>Makhraj Khayshum (Makhraj Hidung):</strong> Tempat keluarnya huruf-huruf yang berasal dari hidung, seperti ن (Nun) dan م (Mim) ketika di-nasalkan.</li>
+    </ul>
+    <h2>Pentingnya Makhraj dalam Tajwid</h2>
+    <p>Memahami makhraj sangat penting dalam membaca Al-Qur'an dengan benar. Kesalahan dalam makhraj dapat mengubah arti kata dan menyebabkan kesalahan dalam bacaan. Oleh karena itu, pelajaran tentang makhraj sering diajarkan dalam kelas-kelas tajwid untuk memastikan bahwa para pembaca Al-Qur'an dapat mengucapkan huruf-huruf dengan tepat.</p>
+</body>
+</html>
