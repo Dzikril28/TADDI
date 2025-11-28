@@ -6,11 +6,12 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        background: #f3e9da;
         margin: 0;
         padding: 30px;
     }
-
+#isi {
+    padding: 20px; /* boleh diganti sesuai selera */
+}
     a {
         color: #13b9db;
         font-weight: bold;
@@ -22,17 +23,39 @@
         color: white;
         padding: 18px;
         border-radius: 12px;
-        font-size: 22px;
+        font-size: 26px;
         font-weight: bold;
         text-align: center;
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        margin-bottom: 25px;
+        margin-bottom: 0px;
     }
-
-    .tajwid-list {
+ .header2 {
+  font-size: 22px;
+    font-weight: bold;
+    margin: 40px 0 20px;
+    text-align: center;
+    padding: 12px;
+    background: #d9edf7;
+    border-left: 6px solid #31708f;
+    border-radius: 6px;
+    margin-bottom: 0;
+ }
+   .header3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 40px 0 20px;
+    text-align: center;
+    padding: 12px;
+    background: #d9edf7;
+    border-left: 6px solid #31708f;
+    border-radius: 6px;
+    margin-bottom: 0;
+}
+   .tajwid-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(1000px,1fr));
   gap: 1.5rem;
+  width: 100%;
 }
 .tajwid-card {
   background: white;
@@ -72,7 +95,7 @@
 }
 </style>
 </head>
-<body>
+<body background="foto/Arabic Letters stock illustration_ Illustration of learning - 26720475.jpg">
 
 <a href="daftarisi.html">← Kembali ke Daftar Isi</a>
 
@@ -81,6 +104,7 @@
 <div class="card" id="isi">
     <section class="tajwid-section" id="tajwid-section">
   <div class="tajwid-list">
+    <div class="header2" id="judul">Hukum Nun Mati dan Tanwin</div>
     <!-- Izhar -->
     <div class="tajwid-card">
       <h3>1.Idzhar</h3>
@@ -119,7 +143,7 @@
       </audio>
     </div>
 
-    
+    <div class="header3" id="judul">Hukum Mim Mati</div>
 
     <!-- Mad -->
     <div class="tajwid-card">
