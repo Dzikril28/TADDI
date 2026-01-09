@@ -1,40 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Makhraj Huruf Hijaiyah</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+            /* TRANSISI */
+            transition: all 0.3s ease;
+        }
+
+        /* EFEK SAAT HOVER */
+        .card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #31708f; /* WARNA BARU JUDUL CARD */
+            transition: color 0.3s ease;
+        }
+
+        /* opsional: judul makin gelap saat hover */
+        .card:hover h2 {
+            color: #245269;
+        }
+
+        .card ul {
+            padding-left: 20px;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #154360;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Makhraj</h1>
-    <p>Makhraj adalah tempat keluarnya huruf-huruf hijaiyah dari alat ucap manusia. Dalam ilmu tajwid, makhraj sangat penting untuk memastikan bahwa setiap huruf diucapkan dengan benar sesuai dengan tempat keluarnya.</p>
-    <tr><bold>Makhroj huruf semuanya ada 17, menurut perkataanyang masyhur Imam Kholil bin Ahmad. Dengan terbagi menjadi 5 bagian.</bold></tr>
-    <h2>Jenis-jenis Makhraj</h2>
-    <ul>
-        <li><strong>Makhraj al-jauf (Makhraj rongga mulut), ada 1 makhraj :</strong>
-        <p>1. Al-jauf (Rongga mulut) :</p></li>
-        <li><strong>Makhraj halqi (Makhraj tenggorokan), ada 3 makhraj:</strong>
-        <p>2. Aqsa al-halqi (Pangkal tenggorokan) :</p>
-        <p>3. Wastol al-halqi (Tengah tenggorokan) :</p>
-        <p>4. Adna al-halqi (Ujung tenggorokan) :</p></li>
-        <li><strong>Makhraj lisan (Makhraj lidah), ada 10 makhraj :</strong>
-        <p>5. Aqsa al-lisan fauqu (Pangkal lidah bagian atas) : </p></li>
-        <p>6. Aqsa al-lisan asfalu (Pangkal lidah bagian bawah) : </p>
-        <p>7. Wasto al-lisan (Tengah lidah) : </p>
-        <p>8. Hafati al-lisan ma'a al-adros : </p>
-        <p>9. Adna al-lisan limuntahaha (Ujung lidah sampai ke akhirnya) : </p>
-        <p>10. Torfu al-lisan tahta makhroji al-lami qolilan (Ujung lidah bawah makhraj lam sedikit) :</p>
-        <p>11. Dzohru ro'si al-lisan (Punggung pangkal lidah) :</p>
-        <p>12. Torful al-lisan ma'a usuli as-stanaya al-'ulya (Ujung lidah beserta pangkal gigi seri atas bagian dalam) :</p>
-        <p>13. Torful al-lisan wa min fauqi as-stanaya as-sufla (Ujung lidah beserta pangkal gigi seri bawah bagian dalam) :</p>
-        <p>14. Torfu al-lisan ma'a atrofi as-stanaya al-'ulya (Ujung lidah beserta ujung gigi seri atas bagian dalam) :</p>
-        <li><strong>Makhraj shafatain (Makhraj bibir), ada 2 makhroj</strong>
-        <p>15. Min batni asy-syafati as-sufla ma'a atrofi stanayal 'ulya (Dari perut bibir bagian bawah di tempelkan dengan ujung gigi seri bagian atas) :</p>
-        <p>16. Baina asy-syafataini (antara dua bibir) :</p></li>
-        <li><strong>Makhraj khayshum (Makhraj hidung), ada 1 makhraj :</strong> 
-        <p>17. Tempat keluarnya huruf-huruf yang berasal dari hidung, seperti ن (Nun) dan م (Mim) ketika di-tasydidkan.</p></li>
-    </ul>
-    <h2>Pentingnya Makhraj dalam Tajwid</h2>
-    <p>Memahami makhraj sangat penting dalam membaca Al-Qur'an dengan benar. Kesalahan dalam makhraj dapat mengubah arti kata dan menyebabkan kesalahan dalam bacaan. Oleh karena itu, pelajaran tentang makhraj sering diajarkan dalam kelas-kelas tajwid untuk memastikan bahwa para pembaca Al-Qur'an dapat mengucapkan huruf-huruf dengan tepat.</p>
+    <div class="container">
+        <h1>Makhraj Huruf Hijaiyah</h1>
+
+        <p>
+            <strong>Makhraj</strong> adalah tempat keluarnya huruf-huruf hijaiyah dari alat ucap manusia.
+            Menurut pendapat masyhur Imam Khalil bin Ahmad, makhraj huruf ada <strong>17</strong> yang terbagi menjadi <strong>5 bagian</strong>.
+        </p>
+
+        <div class="card">
+            <h2>1. Makhraj al-Jauf (Rongga Mulut)</h2>
+            <p class="highlight">Ada 1 makhraj:</p>
+            <ul>
+                <li>1. Al-Jauf (Rongga mulut)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>2. Makhraj Halqi (Tenggorokan)</h2>
+            <p class="highlight">Ada 3 makhraj:</p>
+            <ul>
+                <li>2. Aqsa al-Halqi (Pangkal tenggorokan)</li>
+                <li>3. Wastol al-Halqi (Tengah tenggorokan)</li>
+                <li>4. Adna al-Halqi (Ujung tenggorokan)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>3. Makhraj Lisan (Lidah)</h2>
+            <p class="highlight">Ada 10 makhraj:</p>
+            <ul>
+                <li>5. Aqsa al-Lisan Fauqu</li>
+                <li>6. Aqsa al-Lisan Asfalu</li>
+                <li>7. Wasto al-Lisan</li>
+                <li>8. Hafati al-Lisan ma'a al-Adros</li>
+                <li>9. Adna al-Lisan li Muntahaha</li>
+                <li>10. Torfu al-Lisan tahta makhroji al-Lami qolilan</li>
+                <li>11. Dzohru Ro'si al-Lisan</li>
+                <li>12. Torful al-Lisan ma'a Usuli as-Stanaya al-'Ulya</li>
+                <li>13. Torful al-Lisan wa min Fauqi as-Stanaya as-Sufla</li>
+                <li>14. Torfu al-Lisan ma'a Atrofi as-Stanaya al-'Ulya</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>4. Makhraj Syafatain (Bibir)</h2>
+            <p class="highlight">Ada 2 makhraj:</p>
+            <ul>
+                <li>15. Min Batni asy-Syafati as-sufla ma'a strofi as-stanaya al-'ulya</li>
+                <li>16. Baina asy-Syafataini</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>5. Makhraj Khayshum (Hidung)</h2>
+            <p class="highlight">Ada 1 makhraj:</p>
+            <ul>
+                <li>17. Huruf keluar dari hidung seperti <strong>ن</strong> dan <strong>م</strong> ketika tasydid</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
