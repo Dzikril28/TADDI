@@ -4,68 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>.syekh-list {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.syekh-card {
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  border-radius: 12px;
-  overflow: hidden;
-  width: 320px;
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-.syekh-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-.syekh-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  flex-shrink: 0;
-  border: 3px solid #044a8b;
-}
-.syekh-card div {
-  flex: 1;
-}
-.syekh-card h3 {
-  color: #022f59;
-  margin-bottom: 0.3rem;
-  font-weight: 700;
-}
-.syekh-card p {
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
-  color: #555;
-}
-.syekh-card audio {
-  width: 100%;
-  outline: none;
-}
-    body {
-        font-family: Arial, sans-serif;
-        background: #f3e9da;
-        margin: 0;
-        padding: 30px;
-    }
+    <style>/* ===== BODY ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
 
-    a {
-        color: #13b9db;
-        font-weight: bold;
-        text-decoration: none;
-    }
+    background-image: url("foto/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-    .header {
-        background: #13e0db;
+    color: #1f2933;
+}
+
+/* ===== LINK KEMBALI ===== */
+a {
+    color: #065f46;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== HEADER ===== */
+.header {
+
+        background:linear-gradient(135deg, #0f766e, #115e59);
         color: white;
         padding: 18px;
         border-radius: 12px;
@@ -74,7 +42,69 @@
         text-align: center;
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         margin-bottom: 25px;
-    }
+    
+}
+
+/* ===== LIST ===== */
+.syekh-list {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ===== CARD ===== */
+.syekh-card {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    border-radius: 16px;
+
+    width: 320px;
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.syekh-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.25);
+}
+
+/* ===== FOTO ===== */
+.syekh-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    border: 4px solid #0f766e;
+}
+
+/* ===== TEKS ===== */
+.syekh-card h3 {
+    color: #065f46;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+}
+
+.syekh-card p {
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+/* ===== AUDIO ===== */
+.syekh-card audio {
+    width: 100%;
+    outline: none;
+}
+
+
+    
 
 </style>
 <body><a href="daftarisi.html">← Kembali ke Daftar Isi</a>
@@ -104,7 +134,60 @@
             Browser Anda tidak mendukung audio.
           </audio>
         </div>
+        
       </div>
+       <div class="syekh-card">
+        <img src="foto/syekk_ali.jpg" alt="Sheikh Ali Jaber" class="syekh-img">
+        <div>
+          <h3>Sheikh Ali Jaber</h3>
+          <p>Ustad & qari berpaham tajwid yang juga dikenal di Indonesia.</p>
+          <audio controls>
+            <source src="sound/001.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung audio.
+          </audio>
+        </div>
+        
+      </div>
+       <div class="syekh-card">
+        <img src="foto/syekk_ali.jpg" alt="Sheikh Ali Jaber" class="syekh-img">
+        <div>
+          <h3>Sheikh Ali Jaber</h3>
+          <p>Ustad & qari berpaham tajwid yang juga dikenal di Indonesia.</p>
+          <audio controls>
+            <source src="sound/001.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung audio.
+          </audio>
+        </div>
+        
+      </div>
+       <div class="syekh-card">
+        <img src="foto/syekk_ali.jpg" alt="Sheikh Ali Jaber" class="syekh-img">
+        <div>
+          <h3>Sheikh Ali Jaber</h3>
+          <p>Ustad & qari berpaham tajwid yang juga dikenal di Indonesia.</p>
+          <audio controls>
+            <source src="sound/001.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung audio.
+          </audio>
+        </div>
+        
+      </div>
+       <div class="syekh-card">
+        <img src="foto/syekk_ali.jpg" alt="Sheikh Ali Jaber" class="syekh-img">
+        <div>
+          <h3>Sheikh Ali Jaber</h3>
+          <p>Ustad & qari berpaham tajwid yang juga dikenal di Indonesia.</p>
+          <audio controls>
+            <source src="sound/001.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung audio.
+          </audio>
+        </div>
+        
+      
+        
+   
+    
+      
       <!-- bisa tambah syekh lain di sini -->
     </div>
   </section>
